@@ -2,8 +2,7 @@
 
 
 一. 安装
-  1. conda:
-  
+  1. conda:  
     conda create -n name -p position python=(2.7/3.5/3.6...)
 
   2. apt:
@@ -27,6 +26,12 @@
   6. cmake 编译安装
     cmake install，需要安装gui时添加 --qt-gui
     ./configure --qt-gui
+
+  7. conda pytoch
+    
+     conda create -n pytorch python=2.7
+     conda activate pytorch
+     conda install pytorch torchvision cudatoolkit=9.0 -c pytorch : https://pytorch.org/get-started/locally/
 
 
 二. 删除
