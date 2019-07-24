@@ -46,6 +46,10 @@
 
    9. cuda
   
+    下载网址：
+    cuda: https://developer.nvidia.com/cuda-toolkit-archive
+    cudnn: https://developer.nvidia.com/rdp/cudnn-archive
+  
     sudo sh cuda_9.0.176_384.81_linux.run
     sudo sh cuda_9.0.176.1_linux.run
     sudo sh cuda_9.0.176.2_linux.run
