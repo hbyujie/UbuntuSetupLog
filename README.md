@@ -33,7 +33,10 @@
     conda activate pytorch
     conda install pytorch torchvision cudatoolkit=9.0 -c pytorch
          参考: https://pytorch.org/get-started/locally/
-
+    download slow solver: https://mirrors.tuna.tsinghua.edu.cn/help/anaconda/
+    conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/pytorch/
+    conda install pytorch torchvision cudatoolkit=9.0
+         
   8. 显卡驱动
   
     sudo apt-get purge nvidia*
