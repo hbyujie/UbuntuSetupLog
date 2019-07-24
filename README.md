@@ -33,6 +33,15 @@
      conda activate pytorch
      conda install pytorch torchvision cudatoolkit=9.0 -c pytorch : https://pytorch.org/get-started/locally/
 
+  8. 显卡驱动
+  
+    sudo apt-get purge nvidia*
+    sudo add-apt-repository ppa:graphics-drivers
+    sudo apt-get update
+    sudo apt-cache search nvidia
+    ubuntu-drivers devices
+    sudo apt-get install nvidia-415 nvidia-settings nvidia-prime
+    nvidia-smi
 
 二. 删除
   1. conda:
