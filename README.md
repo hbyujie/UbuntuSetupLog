@@ -3,6 +3,7 @@
 
 一. 安装
   1. conda:
+  
     conda create -n name -p position python=(2.7/3.5/3.6...)
 
   2. apt:
