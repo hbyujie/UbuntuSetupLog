@@ -50,13 +50,13 @@
     sudo sh cuda_9.0.176.1_linux.run
     sudo sh cuda_9.0.176.2_linux.run
 
-    nvcc --version
-    cat /usr/local/cuda/version.txt
-
     export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda/lib64
     export PATH=$PATH:/usr/local/cuda/bin
     export CUDA_HOME=$CUDA_HOME:/usr/local/cuda
     source ~/.bashrc
+
+    nvcc --version
+    cat /usr/local/cuda/version.txt
 
     sudo cp cuda/include/cudnn.h /usr/local/cuda/include/
     sudo cp cuda/lib64/libcudnn* /usr/local/cuda/lib64/
