@@ -31,7 +31,8 @@
   
     conda create -n pytorch python=2.7
     conda activate pytorch
-    conda install pytorch torchvision cudatoolkit=9.0 -c pytorch : https://pytorch.org/get-started/locally/
+    conda install pytorch torchvision cudatoolkit=9.0 -c pytorch
+         参考: https://pytorch.org/get-started/locally/
 
   8. 显卡驱动
   
