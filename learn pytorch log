@@ -1,1 +1,25 @@
 
+1. 数据:
+   导入数据，通过pandas/numpy导入本地数据，pandas能导入同时包含数字，字符串的数据；numpy只能导入包含数字到数据
+   处理数据，如果有字符串数据，通过LabelEncoder将其编码成数字，将数据分成train_data和label_data，并转换成numpy.array格式
+   转换数据，将数据转换成torch.tensor，并通过 torch.utils.data.TensorDataset 创建数据集，
+            再通过 torch.utils.data.DataLoader 创建数据loader
+2. 网络:
+   通过 torch.nn (模型 Linear, ReLU ...) 定义网络
+   创建该网络到实例 net()
+   
+3. loss 及 optimizer
+   通过 torch.nn (loss 函数 CrossEntropyLoss ...) 定义loss_fn
+   通过 torch.optim (optim 函数 SGD ...) 定义optimizer
+   
+4. 训练
+   从数据loader内按批次取值，通过Variable转换，
+       train_data 转成 Variable(batch_x).float()
+       label_data 转成 Variable(batch_y).long()
+       
+       计算输出: out = net(batch_x)
+       计算loss: loss = loss_fn(out, batch_y)
+       
+       optimizer.zero_grad()
+       loss.backward()
+       optimizer.step()
