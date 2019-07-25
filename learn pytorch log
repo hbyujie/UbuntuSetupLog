@@ -2,8 +2,9 @@
 1. 数据:
    导入数据，通过pandas/numpy导入本地数据，pandas能导入同时包含数字，字符串的数据；numpy只能导入包含数字到数据
    处理数据，如果有字符串数据，通过LabelEncoder将其编码成数字，将数据分成train_data和label_data，并转换成numpy.array格式
-   转换数据，将数据转换成torch.tensor，并通过 torch.utils.data.TensorDataset 创建数据集，
+   转换数据，将数据转换成torch.Tensor/torch.from_numpy，并通过 torch.utils.data.TensorDataset 创建数据集，
             再通过 torch.utils.data.DataLoader 创建数据loader
+            torch.from_numpy会继承原有数据类型，torch.Tensor会转统一换成 torch.float32 类型
 2. 网络:
    通过 torch.nn (模型 Linear, ReLU ...) 定义网络
    创建该网络到实例 net()
