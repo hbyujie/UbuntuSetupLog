@@ -74,6 +74,9 @@
     sudo chmod a+r /usr/local/cuda/lib64/libcudnn*
     cat /usr/local/cuda/include/cudnn.h | grep CUDNN_MAJOR -A 2
 
+  10. 
+    sudo apt-get install ibus-pinyin
+    sudo apt-get install ibus-table-wubi
 
 二. 删除
   1. conda:
